@@ -1,0 +1,112 @@
+<div class="btn-div"><button class="btn btn-dark men-btn">View Menu</button></div>
+<div class="menu position-fixed">
+    <ul class="list-unstyled my-menu">
+        <li class="all active">All Fashion</li>
+    </ul>
+    <div>
+        <h6>Men Fashion</h6>
+        <ul class="list-unstyled">
+            <li class="pro" id="pant">Pants</li>
+            <li class="pro" id="shirt">T-shirts</li>
+            <li class="pro" id="jacket">Jackets</li>
+        </ul>
+    </div>
+    <div>
+        <h6>Woman Fashion</h6>
+        <ul class="list-unstyled my-menu">
+            <li class="pro" id="dress">Dress</li>
+            <li class="pro" id="skirt">Skirts</li>
+            <li class="pro" id="accessories">Accessories</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="container info">
+    <div class="title"><h3>Fashion Clothes 2019 & 2020</h3></div>
+    
+    <div class="row array" id="shirt">
+        <div class="col-md-4" *ngFor="let item of myarray">
+            <div class="product">
+            <div><img src={{item.image}}></div>
+            <div>
+                <h6>{{item.productname}}</h6>
+                <h6 class="price">{{item.price}}</h6>
+                <button class="btn btn-outline-danger">Buy Product</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row array" id="pant">
+            <div class="col-md-4" *ngFor="let item of myarray2">
+                <div class="product">
+                <div><img src={{item.image}}></div>
+                <div>
+                    <h6>{{item.productname}}</h6>
+                    <h6 class="price">{{item.price}}</h6>
+                    <button class="btn btn-outline-danger">Buy Product</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="row array" id="jacket">
+                <div class="col-md-4" *ngFor="let item of myarray3">
+                    <div class="product">
+                    <div><img src={{item.image}}></div>
+                    <div>
+                        <h6>{{item.productname}}</h6>
+                        <h6 class="price">{{item.price}}</h6>
+                        <button class="btn btn-outline-danger">Buy Product</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row array" id="dress">
+                    <div class="col-md-4" *ngFor="let item of myarray4">
+                        <div class="product">
+                        <div><img src={{item.image}}></div>
+                        <div>
+                            <h6>{{item.productname}}</h6>
+                            <h6 class="price">{{item.price}}</h6>
+                            <button class="btn btn-outline-danger">Buy Product</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                
+            <div class="row array" id="skirt">
+                    <div class="col-md-4" *ngFor="let item of myarray5">
+                        <div class="product">
+                        <div><img src={{item.image}}></div>
+                        <div>
+                            <h6>{{item.productname}}</h6>
+                            <h6 class="price">{{item.price}}</h6>
+                            <button class="btn btn-outline-danger">Buy Product</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                
+            <div class="row array" id="accessories">
+                    <div class="col-md-4" *ngFor="let item of myarray6">
+                        <div class="product">
+                        <div><img src={{item.image}}></div>
+                        <div>
+                            <h6>{{item.productname}}</h6>
+                            <h6 class="price">{{item.price}}</h6>
+                            <button class="btn btn-outline-danger">Buy Product</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+</div>

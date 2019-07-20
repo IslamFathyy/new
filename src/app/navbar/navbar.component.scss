@@ -1,0 +1,167 @@
+@import '../_colors.scss';
+
+.navbar-brand
+{
+    margin-left: 10%;
+    font-family: 'Anton', sans-serif;
+    font-size:30px;
+    color: $secondcolor;
+}
+.navbar-collapse , .collapse 
+{
+    @media(max-width:992px){
+    background-color:rgba(0,0,0,0.9);
+    z-index: 999;
+    height: 60vh !important;
+    padding-top:5%;
+    border-radius: 30px;
+    li a{color: white !important;text-align: center;margin-bottom:3%;}
+    .nav-shopping , .nav-search{
+        display: none;
+    }
+    }
+    
+}
+.mynav
+{
+    width:80%;
+    max-height: 10vh;
+    margin-left:10%;
+    position: relative;
+}
+.mynav li
+{
+    margin-left: 2%;
+    a 
+    {
+        font-weight:500;
+    }
+}
+.nav-search
+{
+  position: absolute;
+  right:2%;
+  color: $secondcolor !important;
+}
+.nav-shopping
+{
+    position: absolute;
+    right:7%;
+    color: $secondcolor !important;
+}
+
+.nav-link 
+{
+    font-size: 17px;
+}
+.nav-link:hover 
+{
+    font-weight:bold;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+ul 
+{
+    margin-left: 50%;
+}
+
+
+
+
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 45%;
+  border-radius: 30px;
+  margin: 2%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:rgba(0,0,0,0.9);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin:0% auto ; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+@media(max-width:992px){
+    width: 90%;
+}
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size:25px;
+  font-weight:600;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+.sign , .login 
+{
+    cursor: pointer;
+}
